@@ -1,5 +1,8 @@
 package exceptions;
 
+/**
+ * Class d'exceptions qui gere les problèmes de lectures
+ */
 public class PropertiesException extends Exception {
     /**
      * Fait appel à la superClasse Exception pour afficher un message d'erreur

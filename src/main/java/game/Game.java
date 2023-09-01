@@ -2,6 +2,10 @@ package game;
 import Menus.Menu;
 
 import java.util.Scanner;
+
+/**
+ * Classe qui gère le déroulement du jeu
+ */
 public class Game {
     /**
      * Menu de création d'une nouvelle partie avec un nouveau plateau personnalisable par l'user

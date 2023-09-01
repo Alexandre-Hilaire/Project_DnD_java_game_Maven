@@ -14,9 +14,21 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Classe des menus principaux du jeu
+ */
 public class Menu {
+    /**
+     * Nom de personnage
+     */
     String name;
+    /**
+     * Vie de personnages
+     */
     int health = 0;
+    /**
+     * Force de personnages
+     */
     int force = 0;
 
     /**
@@ -46,8 +58,14 @@ public class Menu {
         keyboard.close();
     }
 
+    /**
+     * Liste des warriors dans la BDD
+     */
     //Liste des personnages
     List<Warriors> warriorsList = new ArrayList<>();
+    /**
+     * Liste des Wizards dans la BDD
+     */
     List<Wizards> wizardsList = new ArrayList<>();
 
     /**

@@ -4,7 +4,13 @@ package characters;
  * Classe de personnage Wizards qui hérite de la classe abstraite Characters
  */
 public class Wizards extends Characters {
+    /**
+     * Constructeur du sort amené à disparaitre grâce à sa propre classe
+     */
     private String spell;
+    /**
+     * Constructeur de la potion amené à disparaitre grâce à sa propre classe
+     */
     private String potion;
 
     /**
@@ -20,13 +26,26 @@ public class Wizards extends Characters {
         this.spell = spell;
         this.potion = potion;
     }
+
+    /**
+     * Constructeur avec juste le nom du wizard
+     * @param name Le nom du wizard
+     */
     public Wizards (String name) {
         super(name);
     }
+
+    /**
+     * Constructeur vide
+     */
     public Wizards(){
 
     }
 
+    /**
+     * toString pour afficher les caractéristiques du wizard
+     * @return Une chaîne de caractère
+     */
     @Override
     public String toString() {
         return "Le nom du Mage est" + this.getName() +
@@ -48,18 +67,35 @@ public class Wizards extends Characters {
         this.health = new_health;
         this.force = new_force;
     }
+
+    /**
+     * Getter du sort
+     * @return le sort
+     */
     public String getSpell() {
         return spell;
     }
 
+    /**
+     * Setter du sort
+     * @param spell le nouveau sort
+     */
     public void setSpell(String spell) {
         this.spell = spell;
     }
 
+    /**
+     * Getter de potion
+     * @return potion
+     */
     public String getPotion() {
         return potion;
     }
 
+    /**
+     * setter de potion
+     * @param potion La nouvelle potion
+     */
     public void setPotion(String potion) {
         this.potion = potion;
     }

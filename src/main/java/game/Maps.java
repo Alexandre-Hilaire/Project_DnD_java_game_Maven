@@ -1,7 +1,16 @@
 package game;
 
+/**
+ * Classe qui s'occupe des plateaux
+ */
 public class Maps {
+    /**
+     * Nom du plateau
+     */
     private String name;
+    /**
+     * Taille du plateau
+     */
     private int length;
 
     /**
@@ -14,18 +23,34 @@ public class Maps {
         this.length = length;
     }
 
+    /**
+     * Getter de nom de plateau
+     * @return Le nom du plateau
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * setter du nom de plateau
+     * @param name Le nom du plateau choisi
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Getter de taille de plateau
+     * @return Taille du plateau
+     */
     public int getLength() {
         return length;
     }
 
+    /**
+     *Setter de taille de plateau
+     * @param length La taille de plateau choisie
+     */
     public void setLength(int length) {
         this.length = length;
     }

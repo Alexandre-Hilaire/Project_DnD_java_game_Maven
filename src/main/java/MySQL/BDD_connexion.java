@@ -14,9 +14,14 @@ import java.util.*;
 import exceptions.PropertiesException;
 import exceptions.DatabaseException;
 
-
+/**
+ * Classe qui gère la connexion à la BDD et d'envoyer les résultats de requêtes
+ */
 public class BDD_connexion {
     //Singleton pour permettre une seule instanciation de la connexion
+    /**
+     * Connection nulle au départ
+     */
     private static Connection connection = null;
 
     /**

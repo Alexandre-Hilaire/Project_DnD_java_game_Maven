@@ -1,9 +1,12 @@
 package game;
 
 /**
- * Création d'un dé à 8 faces
+ * Création d\'un dé à 8 faces
  */
 public class Dice_8_faces implements Dices{
+    /**
+     * Faces du dé
+     */
     private static final int faces = 8;
 
     /**

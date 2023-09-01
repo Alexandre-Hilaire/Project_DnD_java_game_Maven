@@ -2,7 +2,9 @@ import Menus.Menu;
 import exceptions.DatabaseException;
 import exceptions.PropertiesException;
 
-
+/**
+ * Classe principale qui démarre le programme
+ */
 public class Main {
     /**
      * Méthode de la class main qui lance le programme en créant un nouveau menu principal

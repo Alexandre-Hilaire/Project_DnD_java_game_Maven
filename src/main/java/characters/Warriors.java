@@ -5,6 +5,9 @@ package characters;
  */
 public class Warriors extends Characters{
 //    private String weapon;
+    /**
+     * Constructeur du bouclier, amené à disparaitre quand il aura sa propre class objet
+     */
     private String shield;
 
     /**
@@ -18,12 +21,26 @@ public class Warriors extends Characters{
         super(name, health, force);
         this.shield = shield;
     }
+
+    /**
+     * Constructeur avec juste le nom
+     * @param name Nom du personnage
+     */
     public Warriors (String name){
         super(name);
     }
+
+    /**
+     * Constructeur vide
+     */
     public Warriors () {
 
     }
+
+    /**
+     * toString pour afficher les caractéristiques du personnage
+     * @return les caractéristiques du personnage sous forme de chaine de caractères
+     */
     @Override
     public String toString() {
         return  "Le nom du Guerrier est " + this.getName() +
@@ -45,10 +62,18 @@ public class Warriors extends Characters{
         this.force = new_force;
     }
 
+    /**
+     * getter de bouclier
+     * @return le bouclier
+     */
     public String getShield() {
         return shield;
     }
 
+    /**
+     * setter de bouclier
+     * @param shield Le bouclier
+     */
     public void setShield(String shield) {
         this.shield = shield;
     }
